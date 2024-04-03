@@ -30,8 +30,18 @@ class StudentController extends Controller
         Student::create($data);
 
         return response()->json(['status'=>'Student Stored Successfully'], 200);
-        
+
     }
+
+    public function show_student(){
+        return view('Show-Student');
+    }
+
+   public function show_student_ajax(){
+    $student = Student::all();
+    return response()->json(['status' => 'Get Student Successfully', 'student' => $student], 200);
+}
+
 
 
 

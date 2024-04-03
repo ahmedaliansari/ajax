@@ -44,7 +44,8 @@
         </div>
 
         <button type="submit" onclick="insertbtn()" class="btn btn-primary">Submit</button>
-        <a href="{{ route('showusers') }}" class="btn btn-primary">View Students</a>
+        <a href="{{ route('showusers') }}" class="btn btn-primary">View Users</a>
+        <a href="{{ route('website.showstudent') }}" class="btn btn-primary">View Students</a>
 
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

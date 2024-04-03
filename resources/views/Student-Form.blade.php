@@ -78,6 +78,7 @@
 
 
         <button type="submit" onclick="insertstd()" class="btn btn-primary">Submit</button>
+        <a href="{{ route('website.showstudent') }}">Go To View Student</a>
 
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

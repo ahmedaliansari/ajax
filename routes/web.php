@@ -28,6 +28,8 @@ Route::name('website.')->prefix('website')->group(function(){
 
     Route::get('Add-Student',[StudentController::class, 'view_std_page'])->name('addstudent');
     Route::post('Store-Student',[StudentController::class, 'store_student'])->name('storestudent');
+    Route::get('show-student', [StudentController::class, 'show_student'])->name('showstudent');
+    Route::get('showstudentajax', [StudentController::class, 'show_student_ajax'])->name('showstudentajax');
 
 
 });
